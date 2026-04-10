@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html><head><title>Admin</title><link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script></head>
+<body><h1>👑 Dashboard</h1>
+<div class="stats">
+<div class="card" id="usersCount">Users:0</div>
+<div class="card" id="productsCount">Products:0</div>
+<div class="card" id="ordersCount">Orders:0</div>
+</div>
+<canvas id="chart"></canvas>
+<button onclick="loadUsers()">Users</button>
+<button onclick="loadProducts()">Products</button>
+<button onclick="loadOrders()">Orders</button>
+
+<h3>Add Product</h3>
+<input id="title"><input id="price"><input id="image">
+<select id="cat"><option>bangles</option><option>earrings</option></select>
+<button onclick="addProduct()">Add</button>
+
+<div id="content"></div>
+<script type="module" src="admin.js"></script></body></html>
